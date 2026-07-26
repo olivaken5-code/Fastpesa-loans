@@ -125,7 +125,63 @@ Create your loan account
 </p>
 
 
-<form>
+<form id="registerForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="number" id="idnumber" placeholder="National ID" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="password" id="password" placeholder="Password" required>
+
+<button type="submit">
+Create Account
+</button>
+
+</form>
+
+<script>
+
+document.getElementById("registerForm").addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const response = await fetch("https://fastpesa-loans.onrender.com/register",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+name:document.getElementById("name").value,
+
+phone:document.getElementById("phone").value,
+
+idnumber:document.getElementById("idnumber").value,
+
+email:document.getElementById("email").value,
+
+password:document.getElementById("password").value
+
+})
+
+});
+
+const data = await response.json();
+
+alert(data.message);
+
+window.location="login.html";
+
+});
+
+</script>
 
 
 <input type="text" placeholder="Full Name" required>
