@@ -1,13 +1,14 @@
 {
   "name": "fastpesa-backend",
   "version": "1.0.0",
-  "description": "FastPesa backend",
+  "description": "FastPesa Loan Backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
   }
 }
