@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FastPesa Loan App</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:#0a8f5a;
+padding:18px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:#fff;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#0a8f5a,#00b36b);
+color:white;
+padding:100px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:35px;
+}
+
+.btn{
+background:#fff;
+color:#0a8f5a;
+padding:16px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:70px 25px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0a8f5a;
+}
+
+.apply{
+max-width:650px;
+margin:60px auto;
+background:#fff;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.apply h2{
+text-align:center;
+margin-bottom:25px;
+color:#0a8f5a;
+}
+
+input,select{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#0a8f5a;
+color:white;
+font-size:18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#08754a;
+}
+
+footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">FastPesa Loan App</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Loans</a>
+<a href="#">How It Works</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Fast Loans When You Need Them</h1>
+
+<p>Simple online application with secure processing and fast decisions.</p>
+
+<a href="#apply" class="btn">Apply Now</a>
+
+</section>
+
+<section class="section">
+
+<div class="cards">
+
+<div class="card">
+<h3>Quick Application</h3>
+<p>Complete your application online in just a few minutes.</p>
+</div>
+
+<div class="card">
+<h3>Secure Service</h3>
+<p>Your information is protected using secure technology.</p>
+</div>
+
+<div class="card">
+<h3>M-Pesa Support</h3>
+<p>Loan disbursement and repayments through M-Pesa.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="apply" id="apply">
+
+<h2>Loan Application</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="M-Pesa Number" required>
+
+<input type="number" placeholder="National ID Number" required>
+
+<input type="number" placeholder="Loan Amount (KES)" required>
+
+<select required>
+<option>Select Repayment Period</option>
+<option>30 Days</option>
+<option>60 Days</option>
+<option>90 Days</option>
+</select>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 FastPesa Loan App. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
